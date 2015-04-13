@@ -1,4 +1,4 @@
-package net.jferna57.samples.spring.aop.aspect;
+package net.jferna57.sample1.spring.aop.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -9,7 +9,7 @@ import org.aspectj.lang.annotation.Before;
 @Aspect
 public class LoggingAspect {
 
-    @Before("execution(* net.jferna57.samples.spring.aop.CustomerBo.addCustomer(..))")
+    @Before("execution(* net.jferna57.sample1.spring.aop.CustomerBo.addCustomer(..))")
     public void logBefore(JoinPoint joinPoint) {
 
         System.out.println("logBefore() is running!");
@@ -18,7 +18,7 @@ public class LoggingAspect {
     }
 
     @AfterReturning(
-            pointcut = "execution(* net.jferna57.samples.spring.aop.CustomerBo.addCustomerReturnValue(..))",
+            pointcut = "execution(* net.jferna57.sample1.spring.aop.CustomerBo.addCustomerReturnValue(..))",
             returning= "result")
     public void logAfterReturning(JoinPoint joinPoint, Object result) {
 
@@ -30,7 +30,7 @@ public class LoggingAspect {
     }
 
     @AfterThrowing(
-            pointcut = "execution(* net.jferna57.samples.spring.aop.CustomerBo.addCustomerThrowException(..))",
+            pointcut = "execution(* net.jferna57.sample1.spring.aop.CustomerBo.addCustomerThrowException(..))",
             throwing= "error")
     public void logAfterThrowing(JoinPoint joinPoint, Throwable error) {
 

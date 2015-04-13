@@ -1,6 +1,6 @@
-package net.jferna57.samples.spring.aop.impl;
+package net.jferna57.sample1.spring.aop.impl;
 
-import net.jferna57.samples.spring.aop.CustomerBo;
+import net.jferna57.sample1.spring.aop.CustomerBo;
 
 public class CustomerBoImpl implements CustomerBo {
 

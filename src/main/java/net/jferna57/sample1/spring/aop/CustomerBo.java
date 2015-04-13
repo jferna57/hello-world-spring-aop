@@ -1,4 +1,4 @@
-package net.jferna57.samples.spring.aop;
+package net.jferna57.sample1.spring.aop;
 
 public interface CustomerBo {
 

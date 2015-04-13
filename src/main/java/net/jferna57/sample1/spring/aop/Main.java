@@ -1,4 +1,4 @@
-package net.jferna57.samples.spring.aop;
+package net.jferna57.sample1.spring.aop;
 
 
 import org.springframework.context.ApplicationContext;
@@ -8,7 +8,7 @@ public class Main {
 
         public static void main(String[] args) throws Exception {
 
-            ApplicationContext appContext = new ClassPathXmlApplicationContext("Spring-Customer.xml");
+            ApplicationContext appContext = new ClassPathXmlApplicationContext("spring-sample1.xml");
 
             System.out.println("-------- Aspect @Before");
             CustomerBo customer = (CustomerBo) appContext.getBean("customerBo");
